@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-01-19 lun 20:13 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="Román Ginés Martínez Ferrández" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org6d6e130">1. Prerequisitos</a></li>
+<li><a href="#org7b0cf03">2. Cuenta en PyPi con "trusted publisher"</a></li>
+<li><a href="#orgde0eec8">3. Publicar con un "trusted publisher"</a></li>
+<li><a href="#org89bcf95">4. Programa de Python publicado en PyPi</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org6d6e130" class="outline-2">
+<h2 id="org6d6e130"><span class="section-number-2">1.</span> Prerequisitos</h2>
+<div class="outline-text-2" id="text-1">
+<ol class="org-ol">
+<li>Asegúrate de poner este proyecto en GitHub.</li>
+<li>Como vamos a desplegar vamos a necesitar tener instalado <b>Python setuptools</b>.</li>
+<li>Tienes que crear, en la raíz del proyecto, el fichero <code>setup.py</code> donde se indica cómo construir el proyecto de Python:</li>
+</ol>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #531ab6; font-weight: bold;">from</span> setuptools <span style="color: #531ab6; font-weight: bold;">import</span> setup, find_packages
+
+
+setup(
+    name=<span style="color: #3548cf;">"optativa_pycicd"</span>,
+    version=<span style="color: #3548cf;">"1.0.0"</span>,
+    author=<span style="color: #3548cf;">"Rom&#225;n Mart&#237;nez"</span>,
+    author_email=<span style="color: #3548cf;">"rgmf@riseup.net"</span>,
+    description=<span style="color: #3548cf;">"Descripci&#243;n de tu proyecto"</span>,
+    packages=find_packages(),
+    install_requires=[
+        <span style="color: #3548cf;">"pytest"</span>,
+        <span style="color: #3548cf;">"flake8"</span>,
+    ],
+)
+
+</pre>
+</div>
+
+<ol class="org-ol">
+<li>Pone en tu <code>.gitignore</code> para que nose pongan bajo el control de versiones:
+<ul class="org-ul">
+<li>la carpeta <code>dist/</code></li>
+<li>la carpeta <code>build/</code></li>
+<li>la carpeta <code>*.egg-info/</code></li>
+</ul></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org7b0cf03" class="outline-2">
+<h2 id="org7b0cf03"><span class="section-number-2">2.</span> Cuenta en PyPi con "trusted publisher"</h2>
+<div class="outline-text-2" id="text-2">
+<ul class="org-ul">
+<li><b>Crea una cuenta en pypi.org: visita *pypi.org</b> y regístrate para obtener una cuenta.</li>
+<li><b>Accede a tu cuenta</b>: después de iniciar sesión, busca el enlace Publishing en el menú de navegación y haz clic en él.</li>
+<li><b>Crea un pending trusted publisher</b>: sigue las instrucciones de la web para agregar un "pending trusted publisher".</li>
+</ul>
+
+<div class="note" id="org7816d54">
+<p>
+Un "pending trusted publisher" permanecerá en estado pendiente hasta que finalmente crees un proyecto. Debes tener en cuenta que estamos realizando este paso antes de registrar el proyecto. Si otro usuario registra un proyecto con el mismo nombre antes que tú, tu "pending trusted publisher" quedará invalidado y tendrás que crear uno nuevo. Por esta razón, se le llama "pending".
+</p>
+
+</div>
+
+<p>
+En la misma página se detalla el método de autenticación para convertirse en un "trusted publisher". Este proceso se basa en OpenID, que a su vez se fundamenta en OAuth.
+</p>
+
+<p>
+<b>Importante</b>:
+</p>
+<ul class="org-ul">
+<li>Tienes que hacerlo para GitHub.</li>
+<li>El nombre del proyecto debe ser único en PyPi.</li>
+<li>Escribe el nombre del repositorio, no la URL.</li>
+<li>Escribe el nombre del fichero YAML con el workflow de GitHub Actions (que estará dentro de <code>.github/workflows/</code>.</li>
+<li>Aunque es opcional, introduce el nombre del entorno ("environment name") que puedes localizar en el fichero YAML, dentro de <code>jobs</code> en la propiedad <code>environment</code> (por ejemplo: <b>production</b>).</li>
+</ul>
+
+<p>
+Una vez termines, en la sección "Publishing" podrás ver tus "pending publishers":
+</p>
+
+
+<div id="org5434632" class="figure">
+<p><img src="./img/pypi_publishing.png" alt="pypi_publishing.png" />
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgde0eec8" class="outline-2">
+<h2 id="orgde0eec8"><span class="section-number-2">3.</span> Publicar con un "trusted publisher"</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Independientemente de que tengas configurado en PyPi un "pending" o un "normal" trusted publisher, puedes publicar en él a través de la plataforma correspondiente. En nuestro caso GitHub.
+</p>
+
+<p>
+Ahora puedes usar el <b>PyPA</b> "<a href="https://github.com/marketplace/actions/pypi-publish">pypi-publish</a> action" para publicar tu programa escrito en Python en PyPi.
+</p>
+
+<div class="note" id="org80a256f">
+<p>
+PyPA (Python Packaging Authority) es un grupo de trabajo dentro de la comunidad Python responsable de mantener e impulsar las decisiones sobre las mejores prácticas y estándares en el ámbito del empaquetado de software en Python. PyPA tiene como objetivo facilitar la creación, distribución e instalación de paquetes de Python, haciendo que el proceso sea más accesible y consistente.
+</p>
+
+<p>
+PyPA desarrolla y promueve estándares como PEP 508 (para metadatos de dependencias) y PEP 517 (para la construcción de paquetes), que son fundamentales para el desarrollo de paquetes en Python.
+</p>
+
+</div>
+
+<div class="note" id="org5d8b12f">
+<p>
+La acción pypi-publish de PyPA (Python Packaging Authority) es una herramienta que facilita la publicación de paquetes de Python en el Python Package Index (PyPI) a través de GitHub Actions. Es especialmente útil para automatizar el proceso de gestión de paquetes y desplegar nuevas versiones de manera continua.
+</p>
+
+</div>
+
+<p>
+Aquí puedes ver el <b>workflow</b> de GitHub Actions que puedes usar para desplegar y publicar mediante el trusted publisher en Pypi:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-yaml"><span style="color: #005e8b;">name</span>: Python application deploy
+
+<span style="color: #0000b0;">on</span>:
+  <span style="color: #005e8b;">release</span>:
+    <span style="color: #005e8b;">types</span>:
+      - published
+
+<span style="color: #005e8b;">jobs</span>:
+  <span style="color: #005e8b;">pypi-publish</span>:
+    <span style="color: #005e8b;">name</span>: Upload release to PyPI
+    <span style="color: #005e8b;">runs-on</span>: ubuntu-latest
+    <span style="color: #005e8b;">environment</span>: production
+    <span style="color: #005e8b;">permissions</span>:
+      <span style="color: #005e8b;">id-token</span>: write
+    <span style="color: #005e8b;">steps</span>:
+      - <span style="color: #005e8b;">uses</span>: actions/checkout@v4
+
+      - <span style="color: #005e8b;">uses</span>: actions/setup-python@v4
+        <span style="color: #005e8b;">with</span>:
+          <span style="color: #005e8b;">python-version</span>: <span style="color: #3548cf;">"3.10"</span>
+
+      - <span style="color: #005e8b;">name</span>: Install dependencies
+        <span style="color: #005e8b;">run</span>: |
+          <span style="color: #3548cf;">python -m pip install --upgrade pip</span>
+<span style="color: #3548cf;">          pip install -r requirements.txt
+</span>
+      - <span style="color: #005e8b;">name</span>: Lint with flake8
+        <span style="color: #005e8b;">run</span>: |
+          <span style="color: #7f0000; font-style: italic;"># </span><span style="color: #7f0000; font-style: italic;">stop the build if there are Python syntax errors or undefined names
+</span><span style="color: #3548cf;">          flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+</span>          <span style="color: #7f0000; font-style: italic;"># </span><span style="color: #7f0000; font-style: italic;">exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
+</span><span style="color: #3548cf;">          flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+</span>
+      - <span style="color: #005e8b;">name</span>: Test with pytest
+        <span style="color: #005e8b;">run</span>: pytest
+
+      - <span style="color: #005e8b;">name</span>: Publish package distributions to PyPI
+        <span style="color: #005e8b;">uses</span>: pypa/gh-action-pypi-publish@release/v1
+</pre>
+</div>
+
+<p>
+Este <b>workflow se dispara</b> cuando creas una nueva <b>release</b> en GitHub, pero antes de poder crear una <b>release</b> en GitHub tienes que crear un <b>tag</b> y subirla al repositorio remoto:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-shell">$ git tag v1.0.0
+$ git push origin v1.0.0
+</pre>
+</div>
+
+<p>
+Ahora sí, desde el repositorio, en GitHub, buscar el apartado <b>Releases</b> y haz clic en el botón de <b>Create new release</b> y sigue los pasos para crear una nueva release o versión (usa el tag reción creado). Una vez terminado se debería disparar el <b>workflow</b> y publicarse en PyPi.
+</p>
+</div>
+</div>
+<div id="outline-container-org89bcf95" class="outline-2">
+<h2 id="org89bcf95"><span class="section-number-2">4.</span> Programa de Python publicado en PyPi</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Si entras en tu cuenta de <b>pypi.org</b> y haces clic en <b>Your projects</b> verás el paquete subido:
+</p>
+
+
+<div id="org2c6b4ff" class="figure">
+<p><img src="./img/your_project.png" alt="your_project.png" />
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Román Ginés Martínez Ferrández</p>
+<p class="date">Created: 2026-01-19 lun 20:13</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

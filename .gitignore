@@ -1,4 +1,8 @@
 README.org
+README2.org
 img/
 venv/
 __pycache__/
+dist/
+build/
+*.egg-info/
