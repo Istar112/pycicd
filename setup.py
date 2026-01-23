@@ -2,8 +2,8 @@ from setuptools import setup, find_packages
 
 
 setup(
-    name="optativa_pycicd",
-    version="1.0.0",
+    name="pycicd_todo",
+    version="1.0.3",
     author="Istar Hernández",
     author_email="istarhf110809@gmail.com",
     description="Descripción de tu proyecto",
